@@ -5,23 +5,23 @@ import './App.css'
 
 function App() {
   
-  let [counter,setcounter]=useState(15)  ;
+  let [counter,setcounter]=useState(25)  ;
   // let counter =15;
     const addvalue = () =>{
       
       console.log("Value Added",counter);
       counter =counter + 1;
-      if (counter<=20){
+      if (counter<=40){
         setcounter(counter);
       }
       else{
         alert("Counter value is greater than 20");
-        counter = 20;
+        counter = 40;
         setcounter(counter);
       }
       // setcounter(counter++);
     }
-    const removevalue=()=>{
+    const removevalue=()=>{  
       console.log("Remove Values",counter);
       counter =counter-1;
       if (counter>=0){
